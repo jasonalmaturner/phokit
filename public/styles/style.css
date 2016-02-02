@@ -1,24 +1,100 @@
+/*http://paletton.com/#uid=50Y0u0kqroEiABrmqthsLimAA95*/
+/*http://paletton.com/#uid=7070R0kpyvZevUXkLIssqnuv29P*/
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 html, body {
   width: 100%;
+  height: 100%;
 }
 
 .main-container {
   width: 100%;
+  height: 100%;
 }
 
 .content-container {
-  width: 100%;
-  min-height: 200px;
   display: flex;
+  align-items: center;
+  width: 100%;
+  /*min-height: 250px;*/
+  min-height: 100%;
 }
 
 .content {
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 1000px;
+  padding: 20px;
 }
 
 .title h1{
-  width: 200px;
+  margin: 0 auto;
+  font-size: 2.5em;
+}
+
+.title .content {
+  flex-direction: column;
+}
+
+.title .content img {
+  height: 6em;
+  width: 6em;
+  margin: 0 auto;
+}
+
+.flex-item {
+  width: 45%;
+}
+
+.question-container {
+  padding: 20px;
+}
+
+.question {
+  font-style: italic;
+  min-height: 2.75em;
+}
+
+.answer {
+  margin-top: 20px;
+}
+
+.title {
+  background-color: #4E0E02;
+  color: white;
+}
+
+.faq {
+  background-color: #4E0E02;
+  color: white;
+}
+
+.email {
+  background-color: #FFD98C;
+}
+
+.email .content {
+  text-align: center;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #4E3502;
+  color: white;
+}
+
+.copyright {
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.signup {
   margin: 0 auto;
 }
