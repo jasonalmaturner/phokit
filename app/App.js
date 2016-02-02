@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 
 const App = React.createClass({
-  handleSubmit() {
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log(this.refs.email.value);
     axios({
       method: 'post',
       url: '/api/email',
@@ -20,8 +22,10 @@ const App = React.createClass({
   render() {
     return (
       <div>
-        <input ref='email' type="email"/>
-        <button onClick={this.handleSubmit}>Sign Up</button>
+        <form onSubmit={this.handleSubmit}>
+          <input ref='email' type="email"/>
+          <input type="submit" value="Sign Up" />
+        </form>
       </div>
     );
   },
