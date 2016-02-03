@@ -168,4 +168,8 @@ input {
   .flex-item {
     width: 100%;
   }
+
+  .question-container {
+    padding: 0;
+  }
 }
