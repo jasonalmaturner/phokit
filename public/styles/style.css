@@ -81,21 +81,82 @@ html, body {
 }
 
 footer {
-  height: 50px;
-  display: flex;
+  height: 40px;
   align-items: center;
   background-color: #4E3502;
   color: white;
 }
 
 .copyright {
+  display: flex;
+  align-items: center;
   height: 100%;
   text-align: center;
   margin: 0 auto;
 }
 
-.signup {
+.copyright p {
+  font-size: 0.8em;
   margin: 0 auto;
+  width: 50%;
+}
+
+.email-link {
+  color: white;
+  text-decoration: none;
+}
+
+.react {
+  flex-direction: column;
+}
+
+.signup {
+  margin: 10px auto;
+}
+
+.success {
+  color: #26BB58;
+}
+
+.error {
+  color: #BB2F15;
+}
+
+.whatever {
+  color: #4E3502;
+}
+
+.res {
+  padding: 0;
+  margin: 0;
+  font-size: 0.75em;
+}
+
+.not-loading {
+  display: none;
+}
+
+.input {
+  border-width: thin;
+  border-color: #4E0E02;
+  border-style: solid;
+}
+
+.input-button {
+  background-color: #4E0E02;
+  border: none;
+  color: white;
+}
+
+input {
+  border-radius: 10px;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+}
+
+.response {
+  height: 1em;
 }
 
 @media (max-width:700px) {
