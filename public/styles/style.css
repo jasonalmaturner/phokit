@@ -179,5 +179,6 @@ input {
 
   .question-hr {
     display: inherit;
+    width: 50%;
   }
 }
