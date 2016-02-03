@@ -27,7 +27,6 @@ const App = React.createClass({
     this.setState({
       loading: true,
     });
-    console.log(this.refs.email.value);
     axios({
       method: 'post',
       url: '/api/email',
@@ -35,7 +34,6 @@ const App = React.createClass({
         email: this.refs.email.value,
       },
     }).then((res) => {
-      console.log(res);
       this.setState({
         loading: false,
         message: res.data === 'email already registered' ? 'whatever' : 'success',
