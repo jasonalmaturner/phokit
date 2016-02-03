@@ -12,16 +12,18 @@ describe('First get', () => {
   });
 });
 
-// describe('Post email', () => {
-//   it('should return an email', done => {
-//     rp({
-//       uri: 'http://127.0.0.1:9001/api/email',
-//       data: {
-//         email: 'j@j.com',
-//       },
-//       method: 'POST',
-//     }).then(res => {
-//       assert.equal()
-//     })
-//   })
-// })
+describe('Post email', () => {
+  it('should return an email added or email already registered', done => {
+    rp({
+      uri: 'http://127.0.0.1:9001/api/email',
+      body: {
+        email: 'j@j.com',
+      },
+      json: true,
+      method: 'POST',
+    }).then(res => {
+      assert.equal(true, res === 'email added' || res === 'email already registered');
+      done();
+    });
+  });
+});
