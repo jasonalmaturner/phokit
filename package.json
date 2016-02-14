@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
-    "start": "nodemon index.js",
-    "forever": "sudo forever -E start index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
